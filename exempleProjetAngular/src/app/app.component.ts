@@ -13,19 +13,19 @@ export class AppComponent {
 
   posts = [
     {
-      title: 'mon premier post',
+      title: 'Mon premier post',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
       loveIts: 0,
       created_at: this.date,
     },
     {
-      title: 'mon deuxieme post',
+      title: 'Mon deuxieme post',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
       loveIts: 0,
       created_at: this.date,
     },
     {
-      title: 'mon troisieme post',
+      title: 'Mon troisieme post',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
       loveIts: 0,
       created_at: this.date
