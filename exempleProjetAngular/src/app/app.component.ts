@@ -7,26 +7,32 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  isAuth = false;
+  title = 'Blog';
 
-  PostListComponent = [
-  	{
-  		title: 'Mon premier post',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
-		loveIts: 0,
-		created_at: new Date()
-  	},
-  	{
-  		title: 'Mon deuxième post',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
-		loveIts: 0,
-		created_at: new Date()
-  	},
-  	{
-  		title: 'Encore un post',
-		content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
-		loveIts: 0,
-		created_at: new Date()
-  	},
-  ]
+  date = new Date();
+
+  posts = [
+    {
+      title: 'mon premier post',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
+      loveIts: 0,
+      created_at: this.date,
+    },
+    {
+      title: 'mon deuxieme post',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
+      loveIts: 0,
+      created_at: this.date,
+    },
+    {
+      title: 'mon troisieme post',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
+      loveIts: 0,
+      created_at: this.date
+    }
+  ];
+
+  constructor() {
+  }
+
 }
