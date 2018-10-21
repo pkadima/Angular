@@ -1,0 +1,14 @@
+<li [ngClass]="{'list-group-item': true, 
+				'list-group-item-success': postLoveIts > 0,
+				'list-group-item-danger': postLoveIts < 0}">
+	<h4 [ngStyle]="{color: getColor()}">{{ postTitle }}</h4>
+	<p>{{postContent}}</p>
+	<p class="btn-toolbar">
+		<button class="btn btn-success" 
+            	(click)="onLike()">Love It !!</button>
+    	<button class="btn btn-danger" 
+    			(click)="onDislike()">Don't love It !!</button>		
+	</p>
+    <p>Score :<span *ngIf="postLoveIts>0">+</span><span>{{postLoveIts}}</span></p>
+    <p [ngStyle]="{color:'rgb(100,100,100)'}">{{postDate | date:"MM/dd/yyyy ', ' h:mm' 'a"}}</p>
+</li>
