@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post-list-item',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./post-list-item.component.scss']
 })
 
-export class PostListItemComponent implements OnInit {
+export class PostListItemComponent{
 
   @Input() postTitle:string;
   @Input() postContent:string;
@@ -22,7 +22,5 @@ export class PostListItemComponent implements OnInit {
   }
 
   constructor() {}
-  
-  ngOnInit() {}
 
 }
