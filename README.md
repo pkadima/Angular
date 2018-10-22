@@ -1,8 +1,8 @@
 # Demo Angular
 
-## exempleProjetAngular
-
 Exemple de compétence en Angular
+
+## exempleProjetAngular
 
 Création d'un blog avec en page d'accueil les différents articles
 Possibilité de cliquer sur like ou dislike, le bloc article s'affiche d'une facon différente en fonction de son nombre de like
