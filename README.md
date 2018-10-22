@@ -1,6 +1,6 @@
-# Demo 1 Angular
+# Demo Angular
 
-##  Blog 
+## exempleProjetAngular
 
 Exemple de compétence en Angular
 
