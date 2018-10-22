@@ -17,5 +17,3 @@ Application des connaissances suivantes
 - Directives par attribut
 - Pipe
 - Promesse
-
-
