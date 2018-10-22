@@ -2,14 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { PostListComponentComponent } from './post-list-component/post-list-component.component';
-import { PostListItemComponentComponent } from './post-list-item-component/post-list-item-component.component';
+import { PostListComponent } from './post-list/post-list.component';
+import { PostListItemComponent } from './post-list-item/post-list-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostListComponentComponent,
-    PostListItemComponentComponent
+    PostListComponent,
+    PostListItemComponent
   ],
   imports: [
     BrowserModule
