@@ -9,10 +9,8 @@ export class PostListComponent implements OnInit {
 
   @Input() posts;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
 }

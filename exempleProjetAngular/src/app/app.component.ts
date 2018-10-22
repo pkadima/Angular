@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'Blog';
+  title = 'Application Angular - Blog';
 
   date = new Date();
 
@@ -32,7 +32,6 @@ export class AppComponent {
     }
   ];
 
-  constructor() {
-  }
+  constructor() {}
 
 }

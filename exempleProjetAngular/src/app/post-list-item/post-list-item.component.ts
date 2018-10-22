@@ -13,11 +13,6 @@ export class PostListItemComponent implements OnInit {
   @Input() postLike:number;
   @Input() postDate:string;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
   loveIts() {
     this.postLike += 1;
   }
@@ -25,5 +20,9 @@ export class PostListItemComponent implements OnInit {
   dontLove() {
       this.postLike -= 1;
   }
+
+  constructor() {}
   
+  ngOnInit() {}
+
 }
