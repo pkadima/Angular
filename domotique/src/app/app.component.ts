@@ -14,12 +14,12 @@ export class AppComponent implements OnInit, OnDestroy {
   counterSubscription: Subscription;
 
   ngOnInit() {
-	const result = interval(1000).pipe()
-	this.counterSubscription = result.subscribe(
-		(value: number) => {
-			this.secondes = value;
-		}
-	)
+  	const result = interval(1000).pipe()
+  	this.counterSubscription = result.subscribe(
+  		(value: number) => {
+  			this.secondes = value;
+  		}
+  	)
   }
 
   ngOnDestroy(){
