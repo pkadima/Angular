@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-root',
@@ -7,31 +8,19 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'Application Angular - Blog';
 
-  date = new Date();
+  constructor() {
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDhMziCR8LUB4mAuF5puGcXpQQjD_kaHqs",
+      authDomain: "pkadima-posts.firebaseapp.com",
+      databaseURL: "https://pkadima-posts.firebaseio.com",
+      projectId: "pkadima-posts",
+      storageBucket: "",
+      messagingSenderId: "1062537425556"
+    };
+    firebase.initializeApp(config);
 
-  posts = [
-    {
-      title: 'Mon premier post',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
-      loveIts:0,
-      created_at: this.date,
-    },
-    {
-      title: 'Mon deuxième post',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
-      loveIts:0,
-      created_at: this.date,
-    },
-    {
-      title: 'Mon troisième post',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
-      loveIts:0,
-      created_at: this.date
-    }
-  ];
-
-  constructor() {}
+  }
 
 }

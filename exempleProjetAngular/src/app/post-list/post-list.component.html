@@ -1,8 +1,52 @@
-<ul>
-	<app-post-list-item *ngFor ="let post of posts" 
-                      	[postTitle]="post.title" 
-                      	[postContent]="post.content" 
-                      	[postLike]="post.loveIts" 
-                      	[postDate]="post.created_at">
-    </app-post-list-item>
-</ul>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+
+			<h2> {{ title }} </h2>
+
+			<ul style="margin-left: -40px">
+				<li *ngFor ="let post of posts; let i = index"
+				[ngClass]="{'list-group-item': true,
+				'list-group-item-success': post.loveIts > '0',
+				'list-group-item-danger': post.loveIts < '0'}">
+
+					<div class="row">
+						<div class="col-xs-6">
+							<h3> {{ post.title }} </h3>
+						</div>
+						<div class="col-xs-6 text-right text-muted">
+							<p> {{ post.created_at}} </p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12">
+							<p> {{ post.content }} </p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-1">
+							<button class="btn btn-success" (click)="loveIts(i)">J'aime</button>
+						</div>
+						<div class="col-xs-1">
+							<button class="btn btn-danger" (click)="dontLove(i)" style="margin-left:10px">Je n'aime pas</button>
+						</div>
+						<div class="text-right">
+							<button class="btn btn-danger" (click)="onDeletePost(i)" style="margin-right:15px">Supprimer post</button>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12">
+							<p> Score: <span *ngIf="post.loveIts>0">+</span>{{ post.loveIts }}</p>
+						</div>
+					</div>
+
+				</li>
+				
+			</ul>
+
+		</div>
+	</div>
+</div>
