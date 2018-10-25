@@ -4,10 +4,10 @@ Exemple de compétence en Angular
 
 ## exempleProjetAngular
 
-Création d'une SPA de type blog, avec en page d'accueil la liste des articles
-Possibilité de cliquer sur "j'aime" ou "je n'aime pas"
-Changement dynamique du style du bloc article en fonction de sa notation
-Possibilité d'ajouter de nouveau article avec un Form Reactive
+Création d'une SPA de type blog, avec en page d'accueil la liste des articles.  
+Possibilité de cliquer sur "j'aime" ou "je n'aime pas".  
+Changement dynamique du style du bloc article en fonction de sa notation.  
+Possibilité d'ajouter de nouveau article avec un Form Reactive.  
 
 Application des connaissances suivantes
 - Création de component
