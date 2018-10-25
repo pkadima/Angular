@@ -32,3 +32,4 @@ En plus des connaissances précendentes, ajout des connaissances suivantes
 - Opérateurs
 - Formulaires
 - HttpClient
+- Firebase
