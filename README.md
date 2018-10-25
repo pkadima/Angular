@@ -4,8 +4,10 @@ Exemple de compétence en Angular
 
 ## exempleProjetAngular
 
-Création d'un blog avec en page d'accueil les différents articles
-Possibilité de cliquer sur like ou dislike, le bloc article s'affiche d'une facon différente en fonction de son nombre de like
+Création d'une SPA de type blog, avec en page d'accueil la liste des articles
+Possibilité de cliquer sur "j'aime" ou "je n'aime pas"
+Changement dynamique du style du bloc article en fonction de sa notation
+Possibilité d'ajouter de nouveau article avec un Form Reactive
 
 Application des connaissances suivantes
 - Création de component
@@ -17,12 +19,18 @@ Application des connaissances suivantes
 - Directives par attribut
 - Pipe
 - Promesse
+- Services 
+- Routes
+- RxJS
+- Observables
+- Souscriptions
+- Firebase
 
 ## domotique
 
 Création d'une SPA permettant la gestion de ces appareils connectés 
 
-En plus des connaissances précendentes, ajout des connaissances suivantes
+listes non exhaustives des compétences utilisisées 
 - Services 
 - Routes
 - RxJS
@@ -33,3 +41,19 @@ En plus des connaissances précendentes, ajout des connaissances suivantes
 - Formulaires
 - HttpClient
 - Firebase
+
+## bibliotheque
+
+Application de gestion de livre
+
+Fonctionnalité
+- Systeme d'authentification complet
+- Routing avec guards
+- Interaction avec Firebase
+	- Auth
+	- Database
+	- Storage
+- Fonctionnalité sur les livres
+	- Listes
+	- Ajout
+	- Suppression
