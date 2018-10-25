@@ -15,7 +15,7 @@ export class AppComponent {
       authDomain: "pkadima-bibliotheque.firebaseapp.com",
       databaseURL: "https://pkadima-bibliotheque.firebaseio.com",
       projectId: "pkadima-bibliotheque",
-      storageBucket: "",
+      storageBucket: "pkadima-bibliotheque.appspot.com",
       messagingSenderId: "675538919659"
     };
     firebase.initializeApp(config);
